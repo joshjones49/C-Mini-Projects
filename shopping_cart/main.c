@@ -9,7 +9,7 @@ int main() {
     float price = 0.0f;
     int quantity = 0;
     char currency = '$';
-    float total = 0.0;
+    float total = 0.0f;
 
     char greeting[40] = "Welcome to the C-Mart Shopping Program!\n";
     char askWhatItemToBuy[40] = "What item would you like to buy?: "; 
@@ -29,7 +29,7 @@ int main() {
 
     total = price * quantity;
 
-    printf("Your total is: $%.2f", total);
+    printf("Your total is: %c%.2f", currency, total);
 
     return 0;
 }

@@ -15,7 +15,7 @@ int main() {
     fgets(adj1, sizeof(adj1), stdin);
     adj1[strlen(adj1) - 1] = '\0';
 
-    printf("Enter a noun! (animal or person): ");
+    printf("Enter an animal!: ");
     fgets(noun, sizeof(noun), stdin);
     noun[strlen(noun) - 1] = '\0';
 
@@ -31,11 +31,7 @@ int main() {
     fgets(adj3, sizeof(adj3), stdin);
     adj3[strlen(adj3) - 1] = '\0';
 
-    printf("%s\n", noun);
-    printf("%s\n", verb);
-    printf("%s\n", adj1);
-    printf("%s\n", adj2);
-    printf("%s\n", adj3);
+    printf("Today I went to a %s restaurant! There was a %s looking %s at me. All of a sudden it began %s towards me!. It was a %s evening!", adj1, noun, adj2, verb, adj3);
 
     return 0;
 }
